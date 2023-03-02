@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% block content %}
+ <!-- added from test.html  -->
+   <nav class="navbar navbar-dark bg-dark navbar-expand-xl navbar-default py-lg-0" style="height: 100px;>
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <div>
+          <img src="img/logo1.jpeg" style="display: inline; width="90"; height="87""/>
+          <h1 style="display: inline; font-size: 35px; color: blue; font-family: Times New Roman">MUTYABA GLOBAL JOY COMPANY BUSINESS MANAGEMENT SYSTEM</h1>
+          </div>  
+          <!--
+			   <a class="navbar-brand" href="#">
+             Add logo with size of 90*80
+			
+            <img src="img/uganda.png" width="90" height="80" alt="">
+                   <h1> MUTYABA GLOBAL JOY </h1>
+             
+        </a>
+        -->
+           <!--
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            -->
+          </div>
+        </div>
+      </nav>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90" style="background-color:#ADD8E6; height:700px;">
+
+					<span class="login100-form-title p-b-51">
+						{{ message }}
+					</span>
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('login')}}">Admn Login</a>
+						</button>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">Admn Register</a>
+						</button>	
+					</div>
+<!--
+				   <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('adminlogin')}}">Admin Login</a>
+						</button>
+					</div>
+-->
+			</div>
+                        <!--  --> 
+                         <div class="wrap-image100" style="width:700px;height:700px; background-color:#ADD8E6;">
+                         
+                         <!-- <div style="width:1075px;height:780px; background-color:silver;"background-color:#90EE90;#ADD8E6;> -->
+				  
+				<!-- Indicators -->
+					<div id="myCarousel" class="carousel slide" style="border:3px solid silver; padding-top: 10px; box-shadow: 0px 5px 0px 0px white; background-color:#0000FF;" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					  <li data-target="#myCarousel" data-slide-to="1"></li>
+					  <li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+				<!-- Wrapper for slides -->
+				        <div class="carousel-inner" role="listbox">
+						  <div class="item active">
+							<img src="{{url_for('static',filename = 'est1.jpg')}}" alt="physical1">
+                          </div>
+						 <div class="item">
+							<img src="{{url_for('static',filename = 'est9.jpg')}}" alt="physical2">
+                          </div>
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est20.jpg')}}" alt="physical3">
+                          </div>
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est12.jpg')}}" alt="physical4">
+                          </div>
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est21.jpg')}}" alt="physical5">
+                          </div>
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est14.jpg')}}" alt="physical6">
+                          </div>
+
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est22.jpg')}}" alt="physical7">
+                          </div>
+                           <div class="item">
+							<img src="{{url_for('static',filename = 'est9.jpg')}}" alt="physical8">
+                          </div>
+							<div class="item">
+							<img src="{{url_for('static',filename = 'est12.jpg')}}" alt="physical9">
+                          </div>
+
+						<div class="item">
+							<img src="{{url_for('static',filename = 'est13.jpg')}}" alt="physical10">
+                          </div>
+
+						  <div class="item">
+							<img src="{{url_for('static',filename = 'est14.jpg')}}" alt="doctor">
+                          </div>
+
+                          <div class="item">
+							<img src="{{url_for('static',filename = 'est22.jpg')}}" alt="doctor">
+                          </div>
+						  <div class="item">
+						  <img src="{{url_for('static',filename = 'est16.jpg')}}" alt="Chicago">
+
+						  </div>
+				          <div class="item">
+                             <img src="{{url_for('static',filename = 'est17.jpg')}}" alt="Los Angeles">
+						  </div>
+				          <div class="item">
+                             <img src="{{url_for('static',filename = 'est17.jpeg')}}" alt="canadian">
+						  </div>
+				          <div class="item">
+                             <img src="{{url_for('static',filename = 'est30.jpeg')}}" alt="canadian">
+						  </div>
+                        </div>
+					</div>
+				<!--  -->
+
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			</div>
+		
+			<!-- -->
+                        <div class="wrap-nav100" style="width:375px;height:700px; background-color:purple;">
+                        <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">Posts</a>
+						</button>	
+					</div> 
+                        <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">News</a>
+						</button>	
+			</div> 
+                          <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">other1</a>
+						</button>	
+			</div> 
+                        <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">other2</a>
+						</button>	
+			</div> 
+                        <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">other3</a>
+						</button>	
+			</div> 
+                        <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">other4</a>
+						</button>	
+			</div> 
+                      <!--
+                         <div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							<a class="login100-form-btn" href="{{ url_for('register')}}">other5</a>
+						</button>	
+			</div>
+                        -->
+			</div>
+
+		</div>
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+</script>
+
+{% endblock %}

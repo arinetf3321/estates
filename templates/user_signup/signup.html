@@ -1,0 +1,68 @@
+{% extends "user_signup/layout.html"%}
+
+{% block content %}
+<div class="container"> 
+    <h1 class="text-center my-3">
+       User Registration
+       </h1>
+
+<div class="row d-flex justify-content-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+     {% with messages=get_flashed_messages(with_categories=true) %}
+     {% if messages %}
+     {% for category,message in messages %}
+      <div class="alert alert-{{category}}">
+       <strong>{{message}}</strong>
+       </div>
+       {% endfor %}
+       {% endif %}
+       {% endwith %}
+       <div class="card">
+       <div class="card-body">
+         <form action="" method="POST"> 
+         
+         <div class="my-2">
+           <label>Enter your first name</label>
+          <input type="text" name="fname" id="fname" class="form-control my-2">
+         </div>  
+
+          <div class="my-2">
+           <label>Enter your last name</label>
+          <input type="text" name="lname" id="lname" class="form-control my-2">
+         </div>  
+
+         <div class="my-2">
+           <label>Enter your user name</label>
+          <input type="text" name="username" id="username" class="form-control my-2">
+         </div>
+
+         <div class="my-2">
+           <label>Enter your email</label>
+          <input type="email" name="email" id="email" class="form-control my-2">
+         </div>
+         
+          <div class="my-2">
+           <label>Enter your education</label>
+          <input type="text" name="edu" id="edu" class="form-control my-2">
+         </div>   
+        
+          <div class="my-2">
+           <label>Enter your password</label>
+          <input type="password" name="password" id="password" class="form-control my-2">
+         </div>    
+
+         <div class="my-2">
+           <label>Enter your password</label>
+          <input type="password" name="password" id="password" class="form-control my-2">
+         </div>
+         <button class="btn btn-success">Signup</button>
+         
+</form>   
+        
+        
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}            
